@@ -8,8 +8,8 @@ public class rotatebyone {
          // 2. Shift all remaining elements one position to the left.
         for (int i = 0; i < arr.length - 1; i++) {
             arr[i] = arr[i + 1];
-        }
-              // 3. Place the saved first element at the very end of the array.
+        } //After loop, the array looks like [2, 3, 4, 5, 5] for input [1, 2, 3, 4, 5]. The last element is still wrong (duplicated), which is fixed in the next step.
+           // Place the saved first element at the very end of the array.
         arr[arr.length - 1] = temp;
     }
     public static void main(String[] args) {
@@ -18,14 +18,12 @@ public class rotatebyone {
         for (int num : arr) {
             System.out.print(num + " ");
         }
-        System.out.println();
-
-        rotatearray(arr);
+          rotatearray(arr);
 // Output the rotated array
         // Expected output: [2, 3, 4, 5, 1]
+            System.out.println();
         System.out.println("Array after rotating by one position: ");
         for (int num : arr) {
             System.out.print(num + " ");
         }
-    }
-}
+    }}
