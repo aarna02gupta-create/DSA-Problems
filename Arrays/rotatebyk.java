@@ -26,7 +26,8 @@ public class rotatebyk {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
         System.out.println("Original array: ");
-        for (int num : arr) System.out.print(num + " ");
+        for (int num : arr) 
+            System.out.print(num + " ");
 
         rotatearray(arr, 2);
         System.out.println("\nArray after rotating by 2 positions: ");
