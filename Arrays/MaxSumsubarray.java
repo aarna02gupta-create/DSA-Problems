@@ -1,6 +1,6 @@
 public class MaxSumsubarray {
     public static int largestSum(int[] nums) {
-        // Maximum sum
+               // Maximum sum
         long maximum = Long.MIN_VALUE; 
         int CurrentSum = 0;
        

@@ -28,11 +28,11 @@ public class MissingAndDuplicateXOR {
         }
          // Determine which is missing and which is duplicate
         for (int num : arr) {
-            if (num == M) {
-                 return new int[]{M, D};
+            if (num == D) {
+                 return new int[]{D, M};
             }
         }
-            return new int[]{D, M};        // duplicate, missing
+            return new int[]{M, D};        // duplicate, missing
     
     }
      public static void main(String[] args) {
