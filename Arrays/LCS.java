@@ -1,5 +1,4 @@
 import java.util.HashSet;
-
 public class LCS {
     public int longestConsecutive(int[] nums) {
         int n = nums.length;
@@ -28,7 +27,7 @@ public class LCS {
         public static void main(String[] args) {
             int[] nums = {100, 4, 200, 1, 3, 2};
             LCS obj = new LCS();
-            int solution = obj.longestConsecutive(nums);
-            System.out.println("The longest consecutive sequence has length: " + solution);
+            int so = obj.longestConsecutive(nums);
+            System.out.println("The longest consecutive sequence has length: " + so);
         }
 }

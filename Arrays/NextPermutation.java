@@ -14,7 +14,7 @@ public class NextPermutation {
         // If no index found
         if (index == -1) {
             // Reverse the entire array
-            reverse(arr, 0, arr.length - 1);
+        reverse(arr, 0, arr.length - 1);  //Call reverse(...) to reverse the whole array (0 to last index) — this gives the smallest arrangement.
             return;
         }
 
@@ -42,14 +42,16 @@ public class NextPermutation {
     }
      public static void main(String[] args) {
         int[] arr = {1, 5, 8, 4, 7, 6, 5, 3, 1};
-
-        NextPermutation obj = new NextPermutation();
-        obj.getNextPermutation(arr);
+/*Since getNextPermutation is not static (no static keyword on it), you can't call it directly from main.
+ You first need to create an object/instance of the class using new NextPermutation(), storing it in variable obj */
+       NextPermutation obj = new NextPermutation();
+       
+    /*Calls the method on our object, passing in arr. Since Java arrays are passed by reference, any in-place changes made 
+    inside getNextPermutation are reflected in this same arr variable here — that's why the method doesn't need to return anything. */   
+    obj.getNextPermutation(arr);
 
         for (int num : arr) {
             System.out.print(num + " ");
         }
-        System.out.println();
-    }
-    
+    }  
 }
