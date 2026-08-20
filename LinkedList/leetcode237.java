@@ -41,6 +41,7 @@ public class leetcode237 {
         Node nodeToDelete = head.next; // Node containing 5
         deleteNode(nodeToDelete);
 
+
         System.out.print("Linked List after deleting 5: ");
         printLL(head);
     }
