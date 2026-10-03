@@ -38,6 +38,20 @@ Expected output:
 
 Compile and run one exercise at a time. These are standalone learning programs, and files may define their own helper node classes; the repository is not a single application or Maven project.
 
+## Keep examples isolated
+
+To keep compiled files out of the source folders, run the same example from the repository root:
+
+```bash
+mkdir -p out/MergeSortedLL
+javac -d out/MergeSortedLL LinkedList/MergeSortedLL.java
+java -cp out/MergeSortedLL MergeSortedLL
+```
+
+On PowerShell, use `New-Item -ItemType Directory -Force out/MergeSortedLL` instead of `mkdir -p`. Use a separate output directory per exercise so helper classes from different solutions cannot collide.
+
+When adding a solution, include the problem link, approach, time/space complexity, and a few edge cases in a short comment. Update the selected list only for examples you can explain and run.
+
 ## Practice approach
 
 I use these exercises to understand pointer updates, edge cases, and the tradeoffs between brute-force and more efficient approaches. The repository is a work in progress; coverage and explanations vary by file.
