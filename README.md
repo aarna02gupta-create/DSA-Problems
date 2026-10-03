@@ -38,6 +38,16 @@ Expected output:
 
 Compile and run one exercise at a time. These are standalone learning programs, and files may define their own helper node classes; the repository is not a single application or Maven project.
 
+One exception is `secondlargest.java`, which calls the existing `largestarray` helper in `Arrays/largestarray.java`. From the repository root, compile both into one isolated directory:
+
+```bash
+mkdir -p out/secondlargest
+javac -d out/secondlargest secondlargest.java Arrays/largestarray.java
+java -cp out/secondlargest secondlargest
+```
+
+The supplied example prints a second-largest value of `19` and largest value of `44`. On PowerShell, use `New-Item -ItemType Directory -Force out/secondlargest` for the directory command.
+
 ## Keep examples isolated
 
 To keep compiled files out of the source folders, run the same example from the repository root:
@@ -57,3 +67,4 @@ When adding a solution, include the problem link, approach, time/space complexit
 I use these exercises to understand pointer updates, edge cases, and the tradeoffs between brute-force and more efficient approaches. The repository is a work in progress; coverage and explanations vary by file.
 
 [My LeetCode profile](https://leetcode.com/u/04aarnal/)
+
