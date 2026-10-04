@@ -23,10 +23,19 @@
 hs_err_pid*
 replay_pid*
 
-# Isolated exercise output and local IDE files
-out/
-.idea/
-.vscode/
-*.iml
-.DS_Store
-Thumbs.db
+.exercise-build/
+target/
+
+# Local secrets and generated development files
+.env
+.env.*
+!.env.example
+!.env.template
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+node_modules/
+dist/
+target/
+*.log

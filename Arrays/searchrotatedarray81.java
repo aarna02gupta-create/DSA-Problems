@@ -1,15 +1,3 @@
-class searchrotatedNode {
-    int val;
-    searchrotatedNode left;
-    searchrotatedNode right;
-
-    searchrotatedNode(int val) {
-        this.val = val;
-        this.left = null;
-        this.right = null;
-    }
-}
-
 class searchrotatedSolution {
     public boolean searchRange(int[] nums, int target) {
         int left = 0;

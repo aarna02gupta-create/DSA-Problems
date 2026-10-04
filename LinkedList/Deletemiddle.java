@@ -23,7 +23,7 @@ class deleteSolution{
         }
         temp = head;   // Reset the temporary node to the beginning of the linked list
         while (temp != null) {
-            if (mid == 0){
+            if (mid == 1){ // When we reach the node just before the middle node
                 temp.data = temp.next.data;   // Copy the data from the next node to the current node
                 temp.next = temp.next.next;   // Bypass the next node, effectively deleting it
                 break;
