@@ -1,0 +1,14 @@
+{
+  "java.project.sourcePaths": [
+    "LinkedList",
+    "Arrays"
+  ],
+  "java.debug.settings.console": "integratedTerminal",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true
+  },
+  "java.debug.settings.onBuildFailureProceed": false,
+  "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-21.0.11"
+}

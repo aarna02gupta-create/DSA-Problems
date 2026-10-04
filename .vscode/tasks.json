@@ -1,0 +1,45 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "problemMatcher": [
+        "$javac"
+      ],
+      "type": "process",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}/.vscode/Run-JavaExercise.ps1",
+        "-SourceFile",
+        "${file}",
+        "-CompileOnly"
+      ],
+      "label": "Compile active Java exercise",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "command": "pwsh"
+    },
+    {
+      "problemMatcher": [
+        "$javac"
+      ],
+      "type": "process",
+      "presentation": {
+        "panel": "dedicated",
+        "reveal": "always",
+        "focus": true
+      },
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}/.vscode/Run-JavaExercise.ps1",
+        "-SourceFile",
+        "${file}"
+      ],
+      "label": "Run active Java exercise",
+      "command": "pwsh"
+    }
+  ]
+}

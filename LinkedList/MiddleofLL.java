@@ -17,6 +17,14 @@ public class MiddleofLL {
         }
         return Slow;  //When the loop ends, slow is at the middle node
     }
+
+    public static void printList(Node head) { // to print the linked list
+        while (head != null) {
+            System.out.print(head.val + " ");
+            head = head.next;
+        }
+        System.out.println();
+    }
    
     public static void main(String[] args) {
         // Manually linking nodes without an array using method chaining
@@ -28,6 +36,7 @@ public class MiddleofLL {
         head.next.next.next.next.next = new Node(6);
     
     System.out.print("Original List: ");
+        printList(head);
         Node mid = findMiddle(head);
         System.out.println("Middle node: " + mid.val);
         

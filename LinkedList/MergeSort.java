@@ -1,0 +1,6 @@
+/**
+ * MergeSort
+ */
+public class MergeSort {
+
+}

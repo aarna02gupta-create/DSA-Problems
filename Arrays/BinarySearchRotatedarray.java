@@ -1,16 +1,4 @@
 
-class BinarySearchRotatedNode {
-    int val;
-    BinarySearchRotatedNode left;
-    BinarySearchRotatedNode right;
-
-    BinarySearchRotatedNode(int val) {
-        this.val = val;
-        this.left = null;
-        this.right = null;
-    }
-}
-
 class RotatedSolution {
     public int searchRange(int[] nums, int target) {
         int left = 0; // start of the search range

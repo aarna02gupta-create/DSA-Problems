@@ -2,12 +2,11 @@ class BinarySearchNode {
     int val;
     BinarySearchNode left;
     BinarySearchNode right;
-    BinarySearchNode mid;
+ 
     BinarySearchNode(int val) {
         this.val = val;
         this.left = null;
         this.right = null;
-        this.mid = null;
     }
 }
 class BinarySearchSolution {
@@ -34,7 +33,7 @@ public class BinarySearch {
     public static void main(String[] args) {
         BinarySearchSolution res = new BinarySearchSolution();
         int[] nums = {-1, 0, 3, 5, 9, 12};
-        int target = 9;
+        int target = 2;
         int result = res.search(nums, target);
         System.out.println("Index of target " + target + ": " + result);
     }
